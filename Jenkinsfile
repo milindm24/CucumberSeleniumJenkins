@@ -13,6 +13,11 @@ stage('Maven Build and test'){
 	sh 'mvn clean install'
 }
 
+stage('Copy to destination'){
+	
+	sh 'cp ./dist/auto-login/* /var/www/html'
+	
+}
 
 }
 
