@@ -5,8 +5,10 @@ stage('checkout'){
 }
 
 stage('Jasmine and karma test'){
-	sh 'cd ./auto-login'
-	sh 'ng test'
+	sh '''cd ./auto-login
+	ng test
+	'''
+	
 }
 
 stage('Maven Build and test'){
