@@ -5,6 +5,7 @@ stage('checkout'){
 }
 
 stage('Jasmine and karma test'){
+	sh 'npm install'
 	sh 'ng test'
 }
 
