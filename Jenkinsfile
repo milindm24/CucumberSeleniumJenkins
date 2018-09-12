@@ -11,7 +11,7 @@ stage('checkout'){
 
 stage('Maven Build and test'){
 	// sh 'cd ./cucumber-skeleton/cucumber-java-skeleton/'
-	sh 'mvn -f /cucumber-skeleton/cucumber-java-skeleton/ verify'
+	sh 'mvn -f /var/lib/jenkins/workspace/CucumberSelenium@2/cucumber-skeleton/cucumber-java-skeleton/ verify'
 }
 
 stage('Copy to destination'){
